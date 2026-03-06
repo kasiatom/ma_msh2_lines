@@ -27,12 +27,11 @@ For example, to install **MultiQC**:
 3) Using precompiled binaries  
 Some programs are also distributed as ready-to-run executable binaries, which can be downloaded and used without installation.   
 Example with fastp:
- - Download the binary  
-   ```
-   wget http://opengene.org/fastp/fastp  ##download
-   chmod a+x ./fastp   ## make program executable 
-   ./fastp  --help ## run as normal script
-   ```
+ ```
+ wget http://opengene.org/fastp/fastp  ## download the binary
+ chmod a+x ./fastp   ## make program executable 
+ ./fastp  --help ## run as you run normal script
+ ```
 
 ## GIT and github    
 I created a public repository (`ma_msh2_lines`) where I want to keep scripts and small result files (for example: MultiQC reports, plots, summary files). Please make sure not to add large data files (such as BAM or FASTQ files) to this repository.   
