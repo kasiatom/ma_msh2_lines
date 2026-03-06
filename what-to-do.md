@@ -1,0 +1,5 @@
+## Files location  
+
+I gave the fastq files here `/mnt/storage/projects/MA_experiment_ZGE/fastq_for_OS/`. Copy the files to your account - contact me in case of permission problems. Each sample has four FASTQ files – two ending with `_1.fq.gz` and two with `_2.fq.gz`. Note that the files are compressed; **do not decompress them**, as almost all bioinformatics tools can work directly with compressed input.
+
+1. Check the quality of the raw files by running FastQC (the program is installed in the bio Conda environment). Summarize the results using MultiQC, and add the final report to the repository. Then we will decide on the next steps. The usage of the multiQC is described here: [https://github.com/MultiQC/MultiQC](https://github.com/MultiQC/MultiQC) and in more detail here: [https://seqera.io/multiqc/](https://seqera.io/multiqc/). You have to install the program - see the [setup.md](./setup.md) file.
