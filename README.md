@@ -1,0 +1,2 @@
+## Repository for analysis og MA lines genomes  
+Mutation acumulation lines are from Liu, H., Zhang, J. The rate and molecular spectrum of mutation are selectively maintained in yeast. Nat Commun 12, 4044 (2021). https://doi.org/10.1038/s41467-021-24364-6. Lines after about 1500 generations of MA with the MHS2 gene restored.
