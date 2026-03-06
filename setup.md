@@ -42,7 +42,7 @@ I created a public repository (`ma_msh2_lines`) where I want to keep scripts and
 	   ```
 	  ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/github_id  
 	   ```     
-      Do not add passphase Copy the public key(just press two times Entter during key generation).
+      Do not add passphase (just press two times Entter during key generation).
 
 	- Copy the public key and add it to your github account  
 	  ``` 
