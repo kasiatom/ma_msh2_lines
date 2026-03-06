@@ -73,5 +73,5 @@ In Visual Studio Code, a Git repository looks like a regular folder. To add chan
    -  **Open the Git folder**: In VS Code, go to File → Open Folder and select the folder that contains the Git repository (`ma_msh2_lines`). This ensures VS Code recognizes it as a Git project.
 
    -  **Stage your changes**: Open the Source Control panel (icon with a branch on the left). You will see a list of changed files. Click `+` next to each file to stage it, or click `+` next to Changes to stage all files.  
-   - **Commit the changes**: In the Message box at the top of the Source Control panel, type a commit message describing your changes, e.g., "Add analysis script". Click the `✔` Commit button.
-    - **Synchronize with GitHub**: Click the Synchronize Changes button in the Source Control panel (circular arrows). This will push your commits to GitHub and pull any updates from the remote repository at the same time.
+   - **Commit the changes**: In the Message box at the top of the Source Control panel, type a commit message describing your changes, e.g., "Add analysis script". Click the `✔` Commit button.  
+   - **Synchronize with GitHub**: Click the Synchronize Changes button in the Source Control panel (circular arrows). This will push your commits to GitHub and pull any updates from the remote repository at the same time.
