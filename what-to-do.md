@@ -12,14 +12,15 @@ You will find the FASTA file, its index, and BWA reference files there. You do n
   A) merge the FASTQ files per sample (`*_1.fq.gz` and `*_2.fq.gz`) and then map them. Be careful — `_1.fq.gz` and `_2.fq.gz` must be concatenated in the same order.   
   B) alternatively, map the files separately and then concatenate the BAM files with `samtools cat`. You must assign the same read group (RG) in both BAMs belonging to the same sample. Samtools are installed in the *bio* environment.
 
-4. Mark duplicates using **GATK MarkDuplicates**. In short, this step ensures that during further analysis each DNA fragment is considered only once. During preparation of sequencing libraries, DNA is fragmented and often amplified with PCR (our libraries were prepared with amplification). As a result, the same DNA fragment can appear multiple times in the final FASTQ files. This tool attempts to identify such cases and mark duplicated reads (by modifying the SAM flag column), so they will not be used during coverage calculation or variant calling. More information: https://gatk.broadinstitute.org/hc/en-us/articles/360037052812-MarkDuplicates-Picard  
+4. Mark duplicates using **GATK MarkDuplicates**. In short, this step ensures that during further analysis each DNA fragment is considered only once. During preparation of sequencing libraries, DNA is fragmented and often amplified with PCR (our libraries were prepared with amplification). As a result, the same DNA fragment can appear multiple times in the final FASTQ files. This tool attempts to identify such cases and mark duplicated reads (by modifying the SAM flag column), so they will not be used during coverage calculation or variant calling. More information: https://gatk.broadinstitute.org/hc/en-us/articles/360037052812-MarkDuplicates-Picard , GATK is installed in bio environment.   
 
 5. Sort and index the final BAM files (samtools sort, samtools index).   
 6. Finally, check metrics of the final BAM files to verify that the mapping was successful and to see whether there might be contamination (e.g. a low percentage of mapped reads). For this, use samtools flagstat. Save the results to text files and summarize them with MultiQC.  
 
 Please put all scripts and the MultiQC report in the repository. I shared my scripts from the previous analysis here; you can use them as a guide:  
   - [alignment script](./scripts/align.sh)  
-  - [flagstats](./scripts/bam-stats.sh)  
+  - [flagstats](./scripts/bam-stats.sh)   
+
 Run everything in a screen session and activate the appropriate conda environment inside the session. Please save logs to files, as this will help us identify and debug any errors.  
 For example, when running a script you can redirect both standard output and error to a log file:
 ```
@@ -29,4 +30,4 @@ Alternatively, if you want to see the output on the screen and save it to a file
 ```
 ./run_mapping.sh 2>&1 | tee run_mapping.log   
 ```
-
+Remember to put your name in the calendar. It shouldn't be a large job — about one day of compute time and ~40 threads should be enough.
