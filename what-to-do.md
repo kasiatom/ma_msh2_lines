@@ -44,7 +44,7 @@ Remember to put your name in the calendar. It shouldn't be a large job — about
 	-R scer.fa \
 	-V sample.vcf.gz
  ```
-GATK is installed in the bio Conda environment.
+GATK is installed in the bio Conda environment.  
 Then, modify and filter the output VCF: 
 A) Split multiallelic records and normalize indels:  
 ```
@@ -56,6 +56,7 @@ B) Filter variants. For this, you can use `bcftools filter` with the `-e` (*excl
 Which variants should be removed? You can use thresholds similar to those described here:   
  * [https://gatk.broadinstitute.org/hc/en-us/articles/360037499012-I-am-unable-to-use-VQSR-recalibration-to-filter-variants](https://gatk.broadinstitute.org/hc/en-us/articles/360037499012-I-am-unable-to-use-VQSR-recalibration-to-filter-variants)
  * [https://gatk.broadinstitute.org/hc/en-us/articles/360035531112--How-to-Filter-variants-either-with-VQSR-or-by-hard-filtering](https://gatk.broadinstitute.org/hc/en-us/articles/360035531112--How-to-Filter-variants-either-with-VQSR-or-by-hard-filtering)  
+  
 Note that SNPs and indels should be filtered differently.  
 The filtering command will look something like this (but double-check it):
 ```
@@ -82,7 +83,7 @@ done
 Variants in 0002.vcf and 0003.vcf are shared between the two VCFs, whereas variants in 0000.vcf and 0001.vcf are specific to the first and second VCF, respectively.   
 
 ### Copy number variants (CNV) and aneuploidies  
-To check whether you have any large copy number variants, you can use CNVkit(https://cnvkit.readthedocs.io/en/stable/) with settings for WGS (whole genome sequencing) analysis.  
+To check whether you have any large copy number variants, you can use CNVkit (https://cnvkit.readthedocs.io/en/stable/) with settings for WGS (whole genome sequencing) analysis.  
 
 The program can be installed in various ways (for example, via conda), but when I worked with other students, we encountered numerous problems with old versions and improperly working dependencies. Therefore, I recommend using a pre-built Docker image through Singularity. Installation (or more specifically, pulling a small container with the program pre-installed and converting it into a standalone environment or executable): 
 
