@@ -45,7 +45,7 @@ Remember to put your name in the calendar. It shouldn't be a large job — about
 	-V sample.vcf.gz
  ```
 GATK is installed in the bio Conda environment.  
-Then, modify and filter the output VCF: 
+Then, modify and filter the output VCF:  
 A) Split multiallelic records and normalize indels:  
 ```
 bcftools norm -f scer.fa -m -any sample.vcf.gz -o sample_norm.vcf.gz -Oz
@@ -101,7 +101,7 @@ To identify CNVs, CNVkit requires a reference created from BAM files of normal s
 singularity exec cnvkit.sif cnvkit.py batch \
 	--normal dna-seq-02-2026/bams/*bam \
 	-m wgs \
-	-f ~/scer-genome/scer.fa
+	-f scer.fa
 ```
 Now, you can call variants like that:
 ```
