@@ -1,0 +1,3 @@
+chromosome	start	end	gene	log2	baf	ci_hi	ci_lo	cn	cn1	cn2	depth	probes	weight
+III	90830	92441	-	-26.815		-26.7933	-26.8348	0	0	0	0	5	4.9606
+XII	732310	734564	-	-26.834		-26.8201	-26.8488	0	0	0	0	7	6.9416

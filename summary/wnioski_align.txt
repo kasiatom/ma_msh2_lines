@@ -1,0 +1,6 @@
+zmapowane odczyty do genomu referencyjnego to B2 14 mln i dla H1 13 mln
+Properly paired jest dla B2 14,23 mln a dla H1 13,60 mln -> prawie calosc zmapowana poprawnie dla obu szczepow 
+Mate mapped to different chr bliski 0 w obu szczepach -> ready mapuja sie w tych samych miejsach, co sugeruje brak kontaminacji 
+Singletons bliskie 0 dla obu szczepow -> oba ready sie zmapowaly, co sugereuje tez dobra jakosc odczytow
+
+Jakosc dopasowana jest wysoka dla obu probek. Duza wiekszosc odczytow zostala poprawnie zmapowana. Nie widac istotnych zanieczyszczen.
