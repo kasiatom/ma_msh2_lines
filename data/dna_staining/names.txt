@@ -1,0 +1,25 @@
+well	strain
+A10	MA 6B
+A11	MA 1F
+A12	Diploid (AS)
+B10	MA 4G (a)
+B11	MA 4B
+B12	Haploid (AS)
+C10	MA 1E
+C11	MA 5F 
+C12	MA 4C
+D10	Diploid (BY)
+D11	MA 1H
+D12	MA 2A
+E10	Triploid (AS)
+E11	MA 4E
+E12	MA 5H
+F10	MA 4D
+F11	MA 3B
+F12	MA 4F
+G10	4G (b)
+G11	Haploid (BY)
+G12	Tetraploid (AS)
+H10	MA 3A 
+H11	Haploid (BY)
+H12	MA 5G 
