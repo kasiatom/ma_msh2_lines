@@ -132,7 +132,7 @@ singularity exec cnvkit.sif cnvkit.py scatter -s sample.filtered.cn{s,r} -o samp
 
 ## filter calls - remove genome segments with normal coverage (here for haploids) and keep only long variants (at least 20 probes):
 head -1 sample_haplo.call.cns >  sample_filtered_haplo.call.cns
-awk 'BEGIN{FS=OFS="\t"} ($9 != 1 && $13 >= 20 && $1 != "Mito")' sample_haplo.call.cns \
+awk 'BEGIN{FS=OFS="\t"} NR>1 && ($9 != 1 && $13 >= 20 && $1 != "Mito")'  sample_haplo.call.cns \
 | sort -k1,1V -k2,2n >> sample_filtered_haplo.call.cns
 ```
 For diploids, modify the condition for column `9!!!` in the command above.
